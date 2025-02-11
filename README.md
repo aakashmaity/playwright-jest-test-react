@@ -1,13 +1,13 @@
-JEST Testing config using playwright
+# JEST Testing config using playwright
 
 
-    - Install playwright
+### Install playwright
     ```
     npm init playwright 
 
     ```
 
-    - config playwright.config.js file
+### config playwright.config.js file
     ```
         command
         projects
@@ -15,21 +15,21 @@ JEST Testing config using playwright
         etc.
     ```
 
-    - create a folder ``` test ```
-    - create test file inside test folder ``` test/ ```
+### create a folder ``` test/ ```
+### create test file inside test folder ``` test/ ```
 
     - screenshot.test.js
     ```
         import { test } from '@playwright/test';
 
         test.describe('Screenshot of button',() => {
-        test('should render the button', async ({page}) => {
-            await page.goto('/');   // goto the home page
-            await page.waitForSelector('button');    // wait for the button to be rendered
-
-            // take a screenshot
-            await page.screenshot({ path: `screenshots/ss-${page.viewportSize()?.width}.png`});
-
-        })
+            test('should render the button', async ({page}) => {
+                await page.goto('/');   // goto the home page
+                await page.waitForSelector('button');    // wait for the button to be rendered
+    
+                // take a screenshot
+                await page.screenshot({ path: `screenshots/ss-${page.viewportSize()?.width}.png`});
+    
+            })
         })
     ```
