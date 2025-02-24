@@ -9,7 +9,7 @@ function App() {
     <>
       <h1>Playwright Testing</h1>
       <div>
-        <span className="">count is {count}</span>
+        <span className="">Count is {count}</span>
         <br/>
         <Button onClick={() => setCount(count + 1)}>
           Increment
