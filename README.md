@@ -15,8 +15,8 @@
         etc.
     ```
 
-### create a folder ``` test/ ```
-### create test file inside test folder ``` test/ ```
+### create a folder ``` tests/ ```
+### create test file inside test folder ``` tests/ ```
 
     - screenshot.test.js
     ```
